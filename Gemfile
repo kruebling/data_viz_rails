@@ -26,6 +26,8 @@ gem 'groupdate', '~> 3.2.0'
 gem 'active_median', '~> 0.1.0'
 # Seeding
 gem 'faker'
+# D3 Js Library 
+gem "d3-rails"
 # Rails jquery
 gem 'jquery-rails'
 # Authenticity
@@ -39,6 +41,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
+gem 'material_icons'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

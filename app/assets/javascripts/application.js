@@ -17,3 +17,4 @@
 //= require materialize-sprockets
 //= require jquery3
 //= require popper
+//= require d3
