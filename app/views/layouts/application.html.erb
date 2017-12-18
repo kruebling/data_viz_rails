@@ -3,14 +3,34 @@
   <head>
     <title>DataViz</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="http://d3js.org/d3.v4.min.js"></script>
     <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+    <%= javascript_include_tag "http://www.google.com/jsapi", "chartkick" %>
   </head>
-
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><%= link_to "Home", root_path, class: 'brand-logo' %></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <% if current_user %>
+          <li><%= link_to current_user.email, edit_user_registration_path, class: 'nav-link' %></li>
+          <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'nav-link' %></li>
+          <% if current_user.admin %>
+            <li><%= link_to 'Admin', rails_admin_path, class: 'nav-link' %></li>
+          <% end %>
+        <% else %>
+          <li><%= link_to 'Login', new_user_session_path, class: 'nav-link' %></li>
+          <li><%= link_to 'Register', new_user_registration_path, class: 'nav-link'  %></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav><br>
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
