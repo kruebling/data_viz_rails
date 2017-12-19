@@ -14,6 +14,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require particles.min
 //= require materialize-sprockets
 //= require jquery3
 //= require d3
