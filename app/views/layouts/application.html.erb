@@ -12,7 +12,7 @@
   <nav>
     <div class="nav-wrapper">
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><%= link_to "Home", root_path, class: 'brand-logo' %></li>
+        <%= link_to image_tag('icon.png', :width => 50, :height => 50), root_path, :alt => "MyLogo" %>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <% if current_user %>
@@ -22,8 +22,8 @@
             <li><%= link_to 'Admin', rails_admin_path, class: 'nav-link' %></li>
           <% end %>
         <% else %>
-          <li><%= link_to 'Login', new_user_session_path, class: 'nav-link' %></li>
-          <li><%= link_to 'Register', new_user_registration_path, class: 'nav-link'  %></li>
+          <li><%= link_to 'Login', new_user_session_path, class: 'nav-link waves-effect waves-light btn amber' %></li>
+          <li><%= link_to 'Register', new_user_registration_path, class: 'nav-link waves-effect waves-light btn teal'  %></li>
         <% end %>
       </ul>
     </div>

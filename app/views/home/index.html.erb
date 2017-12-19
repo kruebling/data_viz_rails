@@ -1,1 +1,1 @@
-hi
+<%= pie_chart @earnings.limit(5).group(:position_title).sum(:salary) %>

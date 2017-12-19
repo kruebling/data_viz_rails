@@ -26,7 +26,7 @@ gem 'groupdate', '~> 3.2.0'
 gem 'active_median', '~> 0.1.0'
 # Seeding
 gem 'faker'
-# D3 Js Library 
+# D3 Js Library
 gem "d3-rails"
 # Rails jquery
 gem 'jquery-rails'
