@@ -15,19 +15,34 @@
  */
 @import "materialize/components/color";
 
-$primary-color: color("deep-purple", "darken-1") !default;
-$primary-color-light: lighten($primary-color, 15%) !default;
-$primary-color-dark: darken($primary-color, 15%) !default;
+$primary-color: color("grey", "lighten-3") !default;
+
 
 $secondary-color: color("amber", "lighten-2") !default;
 $success-color: color("cyan", "accent-2") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("blue-grey", "lighten-4") !default;
+$background: #00356B;
 
 @import "materialize";
 
+.btn {
+color: black;
+}
+
 #particles-js {
   width: 100%;
-  height: 700px;
-  background: grey;
+  height: 650px;
+	background: $background
+}
+
+#text {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	right: 50%;
+	transform: translate(50%,-50%);
+	color: white;
+	max-width: 90%;
+	padding: 2em 3em;
 }

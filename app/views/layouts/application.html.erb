@@ -6,16 +6,13 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "http://www.google.com/jsapi", "chartkick" %>
-    <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
   </head>
-  <nav class='nav-extended color-primary'>
-    <div class="nav-wrapper">
+  <nav>
+    <div class="nav-wrapper z-depth-4">
       <a href="#" class="brand-logo" style='padding:5px;'>Data Viz</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><%= link_to 'Login', new_user_session_path, class: 'nav-link waves-effect waves-light btn amber' %></li>
       </ul>
-    </div>
-    <div class="nav-content">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <% if current_user %>
           <li><%= link_to current_user.email, edit_user_registration_path, class: 'nav-link' %></li>
@@ -27,11 +24,13 @@
       </ul>
     </div>
   </nav>
-  <div id='particles-js'>
-    <h3 class="text-white-1">Curated Data at your Fingertips</h1>
-    <h1><%= link_to 'Start Your Free Trial', new_user_registration_path, class: 'nav-link waves-effect waves-light btn-large amber'  %></h1>
-</div>
   <body>
+    <div id="particles-js">
+      <div class="container" id='text'>
+        <h2>Data Visualization at your Fingertips</h2>
+        <%= link_to 'Create an Account', new_user_registration_path, class: 'nav-link waves-effect waves-light btn-large amber' %>
+      </div>
+    </div>
     <div class="row">
       <div class="col s12">
         <ul class="tabs">
