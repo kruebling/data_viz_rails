@@ -1,3 +1,20 @@
+<nav>
+  <div class="nav-wrapper z-depth-4 blue darken-3">
+    <%= link_to(image_tag("data.png", :alt => "logo", :title => "Home", :style => 'padding:10px;'), root_path) %>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><%= link_to 'Login', new_user_session_path, class: 'nav-link waves-effect waves-light btn amber' %></li>
+    </ul>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <% if current_user %>
+        <li><%= link_to current_user.email, edit_user_registration_path, class: 'nav-link' %></li>
+        <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'nav-link' %></li>
+        <% if current_user.admin %>
+          <li><%= link_to 'Admin', rails_admin_path, class: 'nav-link' %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</nav>
 <div id="particles-js">
   <div class="container" id='text'>
     <h1 style='font-weight: 100;'>Data Visualization at your Fingertips</h1>

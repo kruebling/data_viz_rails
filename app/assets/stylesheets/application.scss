@@ -16,8 +16,6 @@
 @import "materialize/components/color";
 
 $primary-color: color("grey", "lighten-3") !default;
-
-
 $secondary-color: color("amber", "lighten-2") !default;
 $success-color: color("cyan", "accent-2") !default;
 $error-color: color("red", "base") !default;
@@ -29,6 +27,12 @@ $background: #455a64;
 .btn {
 color: black;
 }
+
+// Use this background for Devise Forms
+// body {
+// 	background: image-url('always-grey.png');
+// 	background-color: #303b4d;
+// }
 
 nav {
 	height: 75px;
