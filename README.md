@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+https://www.sitepoint.com/graphs-on-rails-chartkick-in-practice/
