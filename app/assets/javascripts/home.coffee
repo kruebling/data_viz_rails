@@ -13,7 +13,7 @@ $ ->
           }
         },
         "color": {
-          "value": "#ffffff"
+          "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
         },
         "shape": {
           "type": "circle",
@@ -59,7 +59,7 @@ $ ->
         },
         "move": {
           "enable": true,
-          "speed": 3,
+          "speed": 1,
           "direction": "none",
           "random": false,
           "straight": false,
@@ -76,7 +76,7 @@ $ ->
         "events": {
           "onhover": {
             "enable": true,
-            "mode": "repulse"
+            "mode": "grab"
           },
           "onclick": {
             "enable": true,
@@ -86,7 +86,7 @@ $ ->
         },
         "modes": {
           "grab": {
-            "distance": 400,
+            "distance": 150,
             "line_linked": {
               "opacity": 1
             }

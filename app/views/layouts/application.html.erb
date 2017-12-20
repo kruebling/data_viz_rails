@@ -8,8 +8,8 @@
     <%= javascript_include_tag "http://www.google.com/jsapi", "chartkick" %>
   </head>
   <nav>
-    <div class="nav-wrapper z-depth-4">
-      <a href="#" class="brand-logo" style='padding:5px;'>Data Viz</a>
+    <div class="nav-wrapper z-depth-4 blue darken-3">
+      <%= link_to(image_tag("data.png", :alt => "logo", :title => "Home", :style => 'padding:10px;'), root_path) %>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><%= link_to 'Login', new_user_session_path, class: 'nav-link waves-effect waves-light btn amber' %></li>
       </ul>
@@ -27,8 +27,8 @@
   <body>
     <div id="particles-js">
       <div class="container" id='text'>
-        <h2>Data Visualization at your Fingertips</h2>
-        <%= link_to 'Create an Account', new_user_registration_path, class: 'nav-link waves-effect waves-light btn-large amber' %>
+        <h1 style='font-weight: 100;'>Data Visualization at your Fingertips</h1>
+        <%= link_to 'Create an Account', new_user_registration_path, class: 'nav-link waves-effect waves-light btn-large amber', style: "pointer-events: all;" %>
       </div>
     </div>
     <div class="row">
