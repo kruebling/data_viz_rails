@@ -16,6 +16,8 @@ Project is currently a work in progress
   4. Integrate Google charts
   5. Integrate D3
 
+![alt text](app/assets/images/shot3.png)
+
 ![alt text](app/assets/images/shot1.png)
 
 ![alt text](app/assets/images/shot2.png)
