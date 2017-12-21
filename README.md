@@ -1,26 +1,24 @@
-# README
+#Rails Data Visualization
+=====================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Keegan Ruebling
 
-Things you may want to cover:
+Description:
+------------
+A data visualization application that takes a csv file and runs a rake task to import it into Active Record. Once there, Chartkick returns the data in different graphs and charts.
 
-* Ruby version
+## To Do
 
-* System dependencies
+Project is currently a work in progress
+  1. Deploy to Heroku
+  2. Add Tagging for different charts
+  3. Add user email services
+  4. Integrate Google charts
+  5. Integrate D3
 
-* Configuration
+![alt text](app/assets/images/shot1.png)
 
-* Database creation
+![alt text](app/assets/images/shot2.png)
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-https://www.sitepoint.com/graphs-on-rails-chartkick-in-practice/
+copyright Keegan Ruebling © 2017
