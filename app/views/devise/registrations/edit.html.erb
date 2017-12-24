@@ -35,13 +35,11 @@
           <div class="actions">
             <span class="waves-effect waves-light btn"><%= f.submit "Update" %></span>
           </div>
-        <% end %><br>
-      <div class="card-action">
+        <% end %><br><br>
         <span class="card-title">Cancel my account</span>
 
         <span class="waves-effect waves-light btn"><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></span>
 
-      </div>
     </div>
   </div>
 </div>

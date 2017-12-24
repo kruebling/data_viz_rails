@@ -1,7 +1,9 @@
 <div id="particles-js">
   <div class="container" id='text'>
     <h1 style='font-weight: 100;'>Data Visualization at your Fingertips</h1>
-    <%= link_to 'Create an Account', new_user_registration_path, class: 'nav-link waves-effect waves-light btn-large amber', style: "pointer-events: all;" %>
+    <% if !current_user %>
+      <%= link_to 'Create an Account', new_user_registration_path, class: 'nav-link waves-effect waves-light btn-large amber', style: "pointer-events: all;" %>
+    <% end %>
   </div>
 </div>
 <div class="row center-align no-margin">
