@@ -1,5 +1,9 @@
 <br>
 <div class="container">
+  <div class="chip">
+    Food
+    <i class="close material-icons">close</i>
+  </div>
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <%= column_chart @foods.top(:dba, 10), colors: ["#b39ddb"] %>
@@ -12,10 +16,12 @@
       <p>The Health Department conducts unannounced inspections of restaurants at least once a year. Inspectors check for compliance in food handling, food temperature, personal hygiene and vermin control. Each violation of a regulation gets a certain number of points. At the end of the inspection, the inspector totals the points, and this number is the restaurant's inspection score—the lower the score, the better the Grade.<i> - Enigma.io </i></p>
     </div>
   </div>
-</div>
 
 <br>
-<div class="container">
+<div class="chip">
+  District
+  <i class="close material-icons">close</i>
+</div>
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <%= column_chart @foods.top(:boro, 5), colors: ["#ffab91"] %>
@@ -28,10 +34,12 @@
       <p>The Health Department conducts unannounced inspections of restaurants at least once a year. Inspectors check for compliance in food handling, food temperature, personal hygiene and vermin control. Each violation of a regulation gets a certain number of points. At the end of the inspection, the inspector totals the points, and this number is the restaurant's inspection score—the lower the score, the better the Grade.<i> - Enigma.io </i></p>
     </div>
   </div>
-</div>
 
 <br>
-<div class="container">
+  <div class="chip">
+    Frequency
+    <i class="close material-icons">close</i>
+  </div>
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <%= area_chart @foods.group_by_week(:record_date, range: 50.weeks.ago.midnight..1.week.ago).count, colors: ["#4caf50"] %>

@@ -1,5 +1,9 @@
 <br>
 <div class="container">
+  <div class="chip">
+    Salary
+    <i class="close material-icons">close</i>
+  </div>
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <%= column_chart @earnings.limit(15).group(:position_title).average(:salary), colors: ['#ba68c8'] %>
@@ -12,10 +16,12 @@
       <p>Since 1995, the White House has been required to deliver a report to Congress listing the title and salary of every White House Office employee. The Trump administration released the data as a PDF that we subsequently parsed to be machine readable. <i> - Enigma.io </i></p>
     </div>
   </div>
-</div>
 
 <br>
-<div class="container">
+  <div class="chip">
+    Pay
+    <i class="close material-icons">close</i>
+  </div>
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <%= pie_chart @earnings.top(:salary, 10) %>
@@ -28,10 +34,12 @@
       <p>Since 1995, the White House has been required to deliver a report to Congress listing the title and salary of every White House Office employee. The Trump administration released the data as a PDF that we subsequently parsed to be machine readable. <i> - Enigma.io </i></p>
     </div>
   </div>
-</div>
 
 <br>
-<div class="container">
+  <div class="chip">
+    Frequency
+    <i class="close material-icons">close</i>
+  </div>
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <%= pie_chart @earnings.top(:position_title, 5) %>
